@@ -1,16 +1,15 @@
 //ToDo def
 
-package todo;
+package ToDo;
 public class ToDo {
 	
 	public static int ToDoAmount = 0;
-	
 	private boolean isDone = false;
 	private String WhatToDo;
 	
-	public void addToDo(String i){
-		ToDoAmount=i;
-		count ++;
+	public void add(String item){
+		WhatToDo=item;
+		ToDoAmount++;
 	}
 	public void markDone(){
 		isDone=true;
@@ -18,8 +17,7 @@ public class ToDo {
 	public int GetCount(){
 		return ToDoAmount;
 	}
-	public String GetToDo()
-	{
+	public String GetToDo(){
 		
 		return WhatToDo;
 	}
