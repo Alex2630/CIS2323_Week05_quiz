@@ -7,7 +7,7 @@ public class ToDo {
 	private boolean isDone = false;
 	private String WhatToDo;
 	
-	public void add(String item){
+	public ToDo(String item){
 		WhatToDo=item;
 		ToDoAmount++;
 	}
@@ -17,7 +17,7 @@ public class ToDo {
 	public int GetCount(){
 		return ToDoAmount;
 	}
-	public String GetToDo(){
+	public String getToDo(){
 		
 		return WhatToDo;
 	}
